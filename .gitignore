@@ -13,6 +13,9 @@
 # zip files
 *.zip
 
+# gedit cache files
 .gitignore~
+CodeBook.md~
+
 
 *Dataset/
