@@ -3,9 +3,9 @@
 * subject
   * data type: integer 1 to 30
   * description: The identifier of the study subject.
-* activity variable from the UCI HAR Dataset.
-  * data type: character; allowed values: WALKING WALKING_UPSTAIRS WALKING_DOWNSTAIRS SITTING STANDING LAYING
-  * description: The physical activity in which the subject was engaged at the time of the observation.
+* activity
+  * data type: character
+  * description: The physical activity in which the subject was engaged at the time of the observation. Allowed values: WALKING WALKING_UPSTAIRS WALKING_DOWNSTAIRS SITTING STANDING LAYING
 * mean.time.BodyAcc.mean.X variable from the UCI HAR Dataset.
   * data type: number
   * description: The mean of the time.BodyAcc.mean.X variable from the UCI HAR Dataset.
