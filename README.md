@@ -55,7 +55,7 @@ We have renamed the metrics column names to make them more descriptive and human
 information about the summary choices you made 
 
 ### The instruction list 
-R script 
+R script ..
 set the wd
 including downloading in the script
 input is raw data
