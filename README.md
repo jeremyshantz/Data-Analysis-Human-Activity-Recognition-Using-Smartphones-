@@ -17,10 +17,10 @@ We acknowledged our use of the UCI HAR dataset with the following reference:
 > Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
 
 ### The dataset includes the following files
-* tidyDataSet.txt: The tidy subset of the UCI HAR setset
-* CodeBook.md: Information about all columns in the data set
-* README.md: This document which describes the study.
-* run_analysis.R: Source code in R for our transformation of the UCI HAR dataset into our tidy data set.
+* **tidyDataSet.txt**: The tidy subset of the UCI HAR setset
+* **CodeBook.md**: Information about all columns in the data set
+* **README.md**: This document which describes the study.
+* **run_analysis.R**: Source code in R for our transformation of the UCI HAR dataset into our tidy data set.
 
 
 
