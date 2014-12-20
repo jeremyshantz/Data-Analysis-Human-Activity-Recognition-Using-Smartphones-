@@ -1,6 +1,13 @@
-Data-Analysis-Human-Activity-Recognition-Using-Smartphones-
-===========================================================
+Was code book submitted to GitHub that modifies and updates the codebooks available to you with the data to indicate all the variables and summaries you calculated, along with units, and any other relevant information?
 
+
+
+I was able to follow the README in the directory that explained what the analysis files did. 
+
+Data-Analysis-Human-Activity-Recognition-Using-Smartphones
+==========================================================
+
+This data set is a 
 Analysis of the "Human Activity Recognition Using Smartphones" data set from http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones  
 
 

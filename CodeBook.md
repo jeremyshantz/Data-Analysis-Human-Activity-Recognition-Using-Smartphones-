@@ -1,12 +1,23 @@
 ## Code book
 
+The tidy data set contains 
+
+Analysis of the "Human Activity Recognition Using Smartphones" data set from http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones  
+
+
 * subject
   * data type: integer 1 to 30
   * description: The identifier of the study subject.
 * activity
   * data type: character
-  * description: The physical activity in which the subject was engaged at the time of the observation. Allowed values: WALKING WALKING_UPSTAIRS WALKING_DOWNSTAIRS SITTING STANDING LAYING
-* mean.time.BodyAcc.mean.X variable from the UCI HAR Dataset.
+  * description: The physical activity in which the subject was engaged at the time of the observation. 
+    1. WALKING 
+    2. WALKING_UPSTAIRS 
+    3. WALKING_DOWNSTAIRS 
+    4. SITTING 
+    5. STANDING 
+    6. LAYING
+* mean.time.BodyAcc.mean.X
   * data type: number
   * description: The mean of the time.BodyAcc.mean.X variable from the UCI HAR Dataset.
 * mean.time.BodyAcc.mean.Y
@@ -186,21 +197,21 @@
 * mean.frequency.BodyAccMag.std
   * data type: number
   * description: The mean of the frequency.BodyAccMag.std variable from the UCI HAR Dataset.
-* mean.frequency.BodyBodyAccJerkMag.mean
+* mean.frequency.BodyAccJerkMag.mean
   * data type: number
-  * description: The mean of the frequency.BodyBodyAccJerkMag.mean variable from the UCI HAR Dataset.
-* mean.frequency.BodyBodyAccJerkMag.std
+  * description: The mean of the frequency.BodyAccJerkMag.mean variable from the UCI HAR Dataset.
+* mean.frequency.BodyAccJerkMag.std
   * data type: number
-  * description: The mean of the frequency.BodyBodyAccJerkMag.std variable from the UCI HAR Dataset.
-* mean.frequency.BodyBodyGyroMag.mean
+  * description: The mean of the frequency.BodyAccJerkMag.std variable from the UCI HAR Dataset.
+* mean.frequency.BodyGyroMag.mean
   * data type: number
-  * description: The mean of the frequency.BodyBodyGyroMag.mean variable from the UCI HAR Dataset.
-* mean.frequency.BodyBodyGyroMag.std
+  * description: The mean of the frequency.BodyGyroMag.mean variable from the UCI HAR Dataset.
+* mean.frequency.BodyGyroMag.std
   * data type: number
-  * description: The mean of the frequency.BodyBodyGyroMag.std variable from the UCI HAR Dataset.
-* mean.frequency.BodyBodyGyroJerkMag.mean
+  * description: The mean of the frequency.BodyGyroMag.std variable from the UCI HAR Dataset.
+* mean.frequency.BodyGyroJerkMag.mean
   * data type: number
-  * description: The mean of the frequency.BodyBodyGyroJerkMag.mean variable from the UCI HAR Dataset.
-* mean.frequency.BodyBodyGyroJerkMag.std
+  * description: The mean of the frequency.BodyGyroJerkMag.mean variable from the UCI HAR Dataset.
+* mean.frequency.BodyGyroJerkMag.std
   * data type: number
-  * description: The mean of the frequency.BodyBodyGyroJerkMag.std  variable from the UCI HAR Dataset.
+  * description: The mean of the frequency.BodyGyroJerkMag.std  variable from the UCI HAR Dataset.

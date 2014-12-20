@@ -25,8 +25,10 @@ data.directory.name <- 'UCI HAR Dataset'
 
 CleanVariableName <- function (var) {
     # A method which Appropriately labels the data set with descriptive variable names.  
-    # Tidies up variable names by removing illegal characters and expanding the prefix to make them more readable
-    #
+    # Tidies up variable names by removing illegal characters, removing duplicate words, 
+    #   and expanding the prefix to make them more readable
+    # A long variable name is not readable when it is both lowercase and lacks periods.
+    #   Here we choose to make the name lowercase, but separate the componnents with periods.
     # Args:
     #   var: string containing the original variable name
     #
@@ -47,8 +49,12 @@ CleanVariableName <- function (var) {
     # Remove the first character, since we're replacing it with the prefix
     var <- substring(var, 2)
     
-    # Concatenate the prefix and variable name
-    return(paste(prefix, var, sep = '.'))
+    # Remove the infamous double Body variable names
+    var <- gsub("BodyBody", "Body", var)
+    
+    # Concatenate the prefix and variable name.
+    # Also prepend 'mean' because the final data set calculatea the mean of each variable
+    return(paste('mean', prefix, tolower(var), sep = '.'))
 }
 
 LoadDataSet <- function (set) {
@@ -74,7 +80,7 @@ LoadDataSet <- function (set) {
     
     # Extracts only the measurements on the mean and standard deviation for each measurement. 
     #   .meanFreq and angle(*Mean*) are excluded because they are not measurements on the mean
-    columnIndexes = sapply(metric.labels, function(colname){ grepl(colname,  pattern = ".std") | (grepl(colname,  pattern = ".mean") & !grepl(colname,  pattern = ".meanFreq")) })
+    columnIndexes = sapply(metric.labels, function(colname){ grepl(colname,  pattern = "\\.std") | (grepl(colname,  pattern = "\\.mean") & !grepl(colname,  pattern = "\\.meanfreq")) })
     metrics <- metrics[, columnIndexes]
 
     # Bind subject and activities, then bind metrics
@@ -161,9 +167,9 @@ data <- data[order(data[,2]), ]
 data[,2] <- factor(data[,2], labels = activity.labels)
 
 # From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-grouped.data <- group_by(data, subject, activity)
-summarized.data <- summarise_each(grouped.data, funs(mean))
+summarized.data <- group_by(data, subject, activity) %>% summarise_each(funs(mean))
 
 # Output data to disk in fulfillment of: upload your data set as a txt file created with write.table() using row.name=FALSE
+message('Writing data....')
 write.table(summarized.data, row.name=FALSE, file='./tidyDataSet.txt')
 message('Done')
