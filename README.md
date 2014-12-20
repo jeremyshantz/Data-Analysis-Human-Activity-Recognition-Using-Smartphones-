@@ -3,11 +3,11 @@ I was able to follow the README in the directory that explained what the analysi
 
 Was code book submitted to GitHub that modifies and updates the codebooks available to you with the data to indicate all the variables and summaries you calculated, along with units, and any other relevant information?
 
-# Tidy Data - Human Activity-Recognition-Using-Smartphones
+# Tidy Data Analysis of "Human Activity Recognition Using Smartphones"
 
 This data set is a tidy subset of the ["Human Activity Recognition Using Smartphones" data set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
 
-## Reference
+### Reference
 We acknowledged our use of the UCI HAR dataset with the following reference:
 
 > [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
@@ -16,17 +16,15 @@ We acknowledged our use of the UCI HAR dataset with the following reference:
 
 > Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
 
-
-
-## The dataset includes the following files
-* tidyDataSet.txt
-* CodeBook.md
-* README.md
-* run_analysis.R
+### The dataset includes the following files
+* tidyDataSet.txt: The tidy subset of the UCI HAR setset
+* CodeBook.md: Information about all columns in the data set
+* README.md: This document which describes the study.
+* run_analysis.R: Source code in R for our transformation of the UCI HAR dataset into our tidy data set.
 
 
 
-## Study Design
+### Study Design
 a thorough description of how you collected the data
 data downloaded on date time
 
