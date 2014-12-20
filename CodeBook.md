@@ -3,11 +3,9 @@
 The tidy data set consists of a subset of the fields from the ["Human Activity Recognition Using Smartphones" data set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
 
 * **subject**
-  * data type: integer 1 to 30
-  * description: The identifier of the study subject.
+  * integer. 1 to 30. The identifier of the study subject.
 * **activity**
-  * data type: character
-  * description: The physical activity in which the subject was engaged at the time of the observation. 
+  * character. The physical activity in which the subject was engaged at the time of the observation. 
     1. WALKING 
     2. WALKING_UPSTAIRS 
     3. WALKING_DOWNSTAIRS 
