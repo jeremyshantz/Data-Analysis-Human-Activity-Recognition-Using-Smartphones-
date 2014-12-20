@@ -8,7 +8,7 @@ Was code book submitted to GitHub that modifies and updates the codebooks availa
 This data set is a tidy subset of the ["Human Activity Recognition Using Smartphones" data set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
 
 ### Reference
-We acknowledged our use of the UCI HAR dataset with the following reference:
+We acknowledged our use of the UCI HAR dataset:
 
 > [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 
@@ -24,7 +24,7 @@ We acknowledged our use of the UCI HAR dataset with the following reference:
 
 ### Original Study Design
 
-The UCI HAR set data, upon which our study is based, contains the following description of how the original study was conducted (from its readme.txt):
+The UCI HAR data set, upon which our study is based, contains the following description of how the original study was conducted (from its readme.txt):
 
 > The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
@@ -32,20 +32,22 @@ The UCI HAR set data, upon which our study is based, contains the following desc
 
 
 ### Tidy Data Study
-a thorough description of how you collected the data
-data downloaded on date time
 
+#### Recombining the original data set
+We downloaded the UCI HAR data set on 2014-12-20. Since the data set is spread over a number of separate files, it was necessary to reassemble the data set. We combined the subjects, the observations, and the list of activities [using the files subject_*.txt, X_*.txt, and y_*.txt] into a single data.frame, then applied the column names and factored the activity column using the provided activity labels(the features.txt and activity_labels.txt files). We repeated this for both the train and test subsets and then combined the subsets into a final data.frame.
+
+This recombination produces a data set with a number of characterics of a tidy data set. Each observation is in a single row. Each variable is in a single column. Also, since the train and test subsets are merely subsets of the same kind of data, it is appropriate to combine them into a single table.
+
+#### Removing some columns
+To produce the designed subset of only mean and std variables, we removed all columns that whose original name did not contain -std or -mean. This method deliberately excludes a number of columns with 'mean' in the name because they are not actually mean values. This includes variables containing "meanFreq" and the variables which begin with "angle."
+
+#### Tidying up the column names
+explain why the names are descriptive
+human readable
+
+#### Summarizing the data
 information about the summary choices you made
 
-what columns are measurements on the mean and standard deviation
-
-Please note that I rejected measurements based on  meanFreq.  e.g. I keep fBodyAccMag-mean, but reject fBodyAccMag-meanFreq.
-there is some features names that contain "mean" but in fact are not kind of mean values but angles values like this one for example: angle(tBodyAccMean,gravity)
-
-why it is tidy. When you given the variables descriptive names, explain why the names are descriptive. 
-
-each combination of activity, subject, and variable should be represented in the tidy data as an entry.
- 
 ### The instruction list 
 R script 
 set the wd

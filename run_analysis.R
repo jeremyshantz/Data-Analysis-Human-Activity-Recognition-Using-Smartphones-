@@ -149,7 +149,7 @@ DownloadDataIfNecessary <- function () {
     }
 }
 
-# Set up working environment and data set
+# Set up working environment and the source data set
 SetWorkingDirectory()
 DownloadDataIfNecessary()
 
