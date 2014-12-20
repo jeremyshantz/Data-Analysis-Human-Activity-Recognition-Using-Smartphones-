@@ -65,7 +65,7 @@ if you can't script some steps, document them
 	etc
 
 ### Reading the data
-Read the tidy data set in R with the following command. First ensure the working directory contains the tidyDataSet.txt file.
+Read the tidy data set in R with the following command. First ensure the working directory contains the tidyDataSet.txt file. (On Windows, you may need to adjust the path slightly.)
 
 ```R
 read.table('./tidyDataSet.txt', header = TRUE)
