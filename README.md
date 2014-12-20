@@ -52,7 +52,7 @@ We have renamed the metrics column names to make them more descriptive and human
 * Since the columns in the tidy data set represent the mean of each variable (See the 'Summarizing the data' section below), we have also prefixed the column names with "mean."
 
 #### Summarizing the data
-information about the summary choices you made
+information about the summary choices you made 
 
 ### The instruction list 
 R script 
