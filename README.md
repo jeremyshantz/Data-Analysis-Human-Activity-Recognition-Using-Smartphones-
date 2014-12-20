@@ -42,12 +42,12 @@ This recombination produces a data set with a number of characterics of tidy dat
 To produce the designed subset of only mean and std variables, we removed all columns where the original name did not contain -std or -mean. This method deliberately excludes a number of columns with 'mean' in the name because they are not actually mean values. This includes variables containing "meanFreq" and the variables which begin with "angle." We also retained the subject and activity columns.
 
 #### Tidying up the column names
-We have renamed the metrics column names to make the names more descriptive and human readable. The codebook contains a mapping of new variable names to old variable names.
-* The prefixes 't' and 'f'  have been replaced with 'time' and 'frequenly' respectively so the casual obverable will not have to look up their meanings.
-* Illegal and non-semantic characters such as "(" and ")" and "-" have been removed.
+We have renamed the metrics column names to make them more descriptive and human readable. The codebook contains a mapping of new variable names to old variable names.
+* The prefixes 't' and 'f'  have been replaced with 'time' and 'frequency' respectively so the casual obverable will not have to look up their meanings.
+* Illegal and non-semantic characters have been removed. eg. "(" and ")" and "-"
 * Removed duplicate phrases in variable names. eg. 'BodyBody' becomes 'Body'
 * Columns names have been converted to lower case as is common in tidy data.
-* Although tidy data often avoids using puntuation in column names, here we choose deliberately to separate the various elements of the names with periods to make them more human readable. It is not readble to have long compound variable names be both lower case and to lack separators. Periods in variable names is legal and common in R practice.
+* Although tidy data often avoids using punctuation in column names, here we choose deliberately to separate the various elements of the names with periods to make them more human readable. It is not readable to have long compound variable names be both lower case and to lack separators. Periods in variable names is legal and common in R practice. eg. "mean.frequency.bodyacc.std.x" vs meanfrequencybodyaccstdx"
 * Since the columns in the tidy data set represent the mean of each variable (See the 'Summarizing the data' section below), we have also prefixed the column names with "mean."
 
 #### Summarizing the data

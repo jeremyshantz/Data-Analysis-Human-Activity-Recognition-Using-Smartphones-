@@ -28,7 +28,7 @@ CleanVariableName <- function (var) {
     # Tidies up variable names by removing illegal characters, removing duplicate words, 
     #   and expanding the prefix to make them more readable
     # A long variable name is not readable when it is both lowercase and lacks periods.
-    #   Here we choose to make the name lowercase, but separate the componnents with periods.
+    #   Here we choose to make the name lowercase, but separate the components with periods.
     # Args:
     #   var: string containing the original variable name
     #
@@ -53,7 +53,7 @@ CleanVariableName <- function (var) {
     var <- gsub("BodyBody", "Body", var)
     
     # Concatenate the prefix and variable name.
-    # Also prepend 'mean' because the final data set calculatea the mean of each variable
+    # Also prepend 'mean' because the final data set calculates the mean of each variable
     return(paste('mean', prefix, tolower(var), sep = '.'))
 }
 
