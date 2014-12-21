@@ -1,8 +1,3 @@
-
-I was able to follow the README in the directory that explained what the analysis files did. 
-
-Was code book submitted to GitHub that modifies and updates the codebooks available to you with the data to indicate all the variables and summaries you calculated, along with units, and any other relevant information?
-
 # Tidy Data Analysis of "Human Activity Recognition Using Smartphones"
 
 This data set is a tidy subset of the ["Human Activity Recognition Using Smartphones" data set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
