@@ -17,10 +17,10 @@ We acknowledged our use of the UCI HAR dataset:
 > Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
 
 ### The dataset includes the following files
-* **tidyDataSet.txt**: The tidy subset of the UCI HAR setset
-* **CodeBook.md**: Information about all columns in the data set
-* **README.md**: This document which describes the study.
-* **run_analysis.R**: Source code in R for our transformation of the UCI HAR dataset into our tidy data set.
+* **tidyDataSet.txt**: The tidy subset of the UCI HAR data set
+* [**CodeBook.md**:] (https://github.com/jeremyshantz/Tidy-Data-Analysis-Human-Activity-Recognition-Using-Smartphones-/blob/master/CodeBook.md) Information about all columns in the data set
+* **README.md**: This document which describes the study and the summary choices.
+* **run_analysis.R**: Source code in R for our transformation of the UCI HAR data set into our tidy data set.
 
 ### Original Study Design
 
@@ -31,19 +31,19 @@ The UCI HAR data set, upon which our study is based, contains the following desc
 > The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
 
 
-### Tidy Data Study
+### Tidy Data Study Design
 
 #### Recombining the original data set
-We downloaded the UCI HAR data set on 2014-12-20. Since the data set is spread over a number of separate files, it was necessary to reassemble the data set. We combined the subjects, the observations, and the list of activities [using the files subject_*.txt, X_*.txt, and y_*.txt] into a single data.frame, then applied the column names and factored the activity column using the provided activity labels (the features.txt and activity_labels.txt files). We repeated this for both the train and test subsets and then combined the subsets into a final data.frame.
+We downloaded the UCI HAR data set on 2014-12-20. Since the data set is spread over a number of separate files, it was necessary to reassemble it. We combined the subjects, the observations, and the list of activities [using the files subject_*.txt, X_*.txt, and y_*.txt] into a single data.frame, then applied the column names and factored the activity column using the provided activity labels (the features.txt and activity_labels.txt files). We repeated this for both the train and test subsets and then combined the subsets into a final data.frame.
 
 This recombination produces a data set with a number of characterics of tidy data. Each observation is in a single row. Each variable is in a single column. Also, since the train and test subsets are merely subsets of the same kind of data, it is appropriate to combine them into a single table.
 
 #### Removing some columns
-To produce the designed subset of only mean and std variables, we removed all columns where the original name did not contain -std or -mean. This method deliberately excludes a number of columns with 'mean' in the name because they are not actually mean values. This includes variables containing "meanFreq" and the variables which begin with "angle." We also retained the subject and activity columns.
+To produce the designated subset of only mean and std variables, we removed all columns where the original name did not contain -std or -mean. This method deliberately excludes a number of columns with 'mean' in the name because they are not actually mean values. This includes variables containing "meanFreq" and the variables which begin with "angle." We also retained the subject and activity columns.
 
 #### Tidying up the column names
 We have renamed the metrics column names to make them more descriptive and human readable. The codebook contains a mapping of new variable names to old variable names.
-* The prefixes 't' and 'f'  have been replaced with 'time' and 'frequency' respectively so the casual obverable will not have to look up their meanings.
+* The prefixes 't' and 'f'  have been replaced with 'time' and 'frequency' respectively so our readers will not have to look up their meanings.
 * Illegal and non-semantic characters have been removed. eg. "(" and ")" and "-"
 * Removed duplicate phrases in variable names. eg. 'BodyBody' becomes 'Body'
 * Columns names have been converted to lower case as is common in tidy data.
