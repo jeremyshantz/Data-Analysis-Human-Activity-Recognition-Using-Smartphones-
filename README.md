@@ -25,36 +25,30 @@ We acknowledged our use of the UCI HAR dataset:
 * The only input to the **run_analysis.R** script is the UCI HAR data set which must be in the working directory. The script requires no parameters.
 * The output from the script is the tidy data set.
 * Although all of tasks required for this analysis are fully scripted in R and no manual steps are required (and thus the script itself *is* the instruction list), here is what the script does:
-
-* Recombine the UCI data set in memory
-    * Load the subject_*.txt, y_.txt, X_*.txt files.
-	* Column bind these three sets together.
-	* Name the columes using the values loaded from from features.txt.
-	* Factor the activities column and name the factors using values loaded from activity_labels.txt
-	* Repeat these steps for both the train and test data sets.
-	* Row bind the two data sets.
-	* We now have the original data set loaded.
-
-* Tidy up the column names
-	* Replace prefixes 't' and 'f' with 'time' and 'frequency' respectively.
-	* Remove illegal characters and hyphens.
-    * Remove duplicate phrases in variable names. eg. 'BodyBody' becomes 'Body'
-    * Converted names to lower case
-	* Prefix the column name with 'mean' (See the codebook's 'Summarizing the data' section for justification)
-
-* Remove some columns
-	* Remove all columns where the original name did not contain -std or -mean including those containing "meanFreq" and those beginning with "angle." 
-	* Except we also retained the subject and activity columns.
-	* See codebook for justifications.
-
-* Summarize the data
-	* Group by subject and activity and calculate the mean for each metric.
-
-* Output
-	* Output the data.frame to disk.	
-
-* Note
-    * The script also sets the working directory and downloads the original data set if it is not already present.
+    * Recombine the UCI data set in memory
+        * Load the subject_*.txt, y_.txt, X_*.txt files.
+    	* Column bind these three sets together.
+    	* Name the columes using the values loaded from from features.txt.
+    	* Factor the activities column and name the factors using values loaded from activity_labels.txt
+    	* Repeat these steps for both the train and test data sets.
+    	* Row bind the two data sets.
+    	* We now have the original data set loaded.
+    * Tidy up the column names
+    	* Replace prefixes 't' and 'f' with 'time' and 'frequency' respectively.
+    	* Remove illegal characters and hyphens.
+        * Remove duplicate phrases in variable names. eg. 'BodyBody' becomes 'Body'
+        * Converted names to lower case
+    	* Prefix the column name with 'mean' (See the codebook's 'Summarizing the data' section for justification)
+    * Remove some columns
+    	* Remove all columns where the original name did not contain -std or -mean including those containing "meanFreq" and those beginning with "angle." 
+    	* Except we also retained the subject and activity columns.
+    	* See codebook for justifications.
+    * Summarize the data
+    	* Group by subject and activity and calculate the mean for each metric.
+    * Output
+    	* Output the data.frame to disk
+    * Note
+        * The script also sets the working directory and downloads the original data set if it is not already present.
 
 ### Reading the data
 Read the tidy data set in R with the following command. First ensure the working directory contains the tidyDataSet.txt file. (On Windows, you may need to adjust the path slightly.)
