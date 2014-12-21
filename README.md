@@ -26,7 +26,7 @@ We acknowledged our use of the UCI HAR dataset:
 * The output from the script is the tidy data set.
 * Although all of tasks required for this analysis are fully scripted in R and no manual steps are required (and thus the script itself *is* the instruction list), here is what the script does:
     * Recombine the UCI data set in memory
-        * Load the subject_*.txt, y_.txt, X_*.txt files.
+        * Load the subject_\*.txt, y_\*.txt, X_\*.txt files.
     	* Column bind these three sets together.
     	* Name the columes using the values loaded from from features.txt.
     	* Factor the activities column and name the factors using values loaded from activity_labels.txt
