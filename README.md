@@ -45,7 +45,7 @@ We acknowledged our use of the UCI HAR dataset:
     	* Except we also retain the subject and activity columns.
     	* See codebook for justifications.
     * Summarize the data
-    	* Group by subject and activityC
+    	* Group by subject and activity
         * Calculate the mean for each metric.
     * Output
     	* Output the data.frame to disk
