@@ -20,11 +20,10 @@ We acknowledged our use of the UCI HAR dataset:
 ### The instruction list - how the script works
 * The only input to the **run_analysis.R** script is the UCI HAR data set which must be in the working directory. The script requires no parameters.
 * The output from the script is the tidy data set.
-* Although all of tasks required for this analyst are fully scriped in R and no manual steps are required (and thus the script itself *is* the instruction list), here is .....
-
-set the wd
-including downloading in the script
-Read the metrics labels and actvity labels.
+* Although all of tasks required for this analyst are fully scripted in R and no manual steps are required (and thus the script itself *is* the instruction list), here is how the script works:
+    * set the wd
+    * including downloading in the script
+    * Read the metrics labels and actvity labels.
 
 
 ### Reading the data
