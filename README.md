@@ -1,6 +1,6 @@
 # Tidy Data Analysis of "Human Activity Recognition Using Smartphones"
 
-This data set is a tidy subset of the ["Human Activity Recognition Using Smartphones" data set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
+This data set is a tidy subset of the ["Human Activity Recognition Using Smartphones" data set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones). (Downloadable [here] (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) )
 
 ### Reference
 We acknowledged our use of the UCI HAR dataset:
