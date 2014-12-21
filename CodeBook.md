@@ -2,7 +2,9 @@
 
 The tidy data set consists of a subset of the fields from the ["Human Activity Recognition Using Smartphones" data set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones). Refer to the codebook in that dataset for the meaning of the original variables. 
 
-Our variable names are free from duplicates, provide meaningful and expanded prefixes, and contain no illegal changers. Our variables names are lowercase, but we chose to use periods in variable names to separate the components since the combination of lowercase and no periods produces hard-to-read variable names which we do not consider "tidy." eg. meanfrequencybodygyromeany vs mean.frequency.bodygyro.mean.y
+Our variable names are free from duplicates, provide meaningful and expanded prefixes, and contain no illegal characters. Our variables names are lowercase, but we chose to use periods in variable names to separate the components since the combination of lowercase and no periods produces hard-to-read variable names which we do not consider "tidy." eg. meanfrequencybodygyromeany vs mean.frequency.bodygyro.mean.y
+
+All of the measurements below are of the mean for each combination of subject and activity.
 
 * **subject**
   * integer. 1 to 30. The identifier of the study subject.
