@@ -38,14 +38,15 @@ We acknowledged our use of the UCI HAR dataset:
         	* Replace prefixes 't' and 'f' with 'time' and 'frequency' respectively.
         	* Remove illegal characters and hyphens.
             * Remove duplicate phrases in variable names. eg. 'BodyBody' becomes 'Body'
-            * Converted names to lower case
+            * Convert names to lower case
         	* Prefix the column name with 'mean' (See the codebook's 'Summarizing the data' section for justification)
     * Remove some columns
-    	* Remove all columns where the original name did not contain -std or -mean including those containing "meanFreq" and those beginning with "angle." 
-    	* Except we also retained the subject and activity columns.
+    	* Remove all columns where the original name does not contain -std or -mean including those containing "meanFreq" and those beginning with "angle." 
+    	* Except we also retain the subject and activity columns.
     	* See codebook for justifications.
     * Summarize the data
-    	* Group by subject and activity and calculate the mean for each metric.
+    	* Group by subject and activityC
+        * Calculate the mean for each metric.
     * Output
     	* Output the data.frame to disk
     * Note
