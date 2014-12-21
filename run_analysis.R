@@ -173,3 +173,4 @@ summarized.data <- group_by(data, subject, activity) %>% summarise_each(funs(mea
 message('Writing data....')
 write.table(summarized.data, row.name=FALSE, file='./tidyDataSet.txt')
 message('Done')
+
