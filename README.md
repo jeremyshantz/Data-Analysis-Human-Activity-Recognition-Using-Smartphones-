@@ -12,9 +12,11 @@ We acknowledged our use of the UCI HAR dataset:
 > Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
 
 ### The dataset includes the following files
-* [**tidyDataSet.txt**:] (https://github.com/jeremyshantz/Tidy-Data-Analysis-Human-Activity-Recognition-Using-Smartphones-/blob/master/tidyDataSet.txt) The tidy subset of the UCI HAR data set
-* [**CodeBook.md**:] (https://github.com/jeremyshantz/Tidy-Data-Analysis-Human-Activity-Recognition-Using-Smartphones-/blob/master/CodeBook.md) Information about all columns in the data set
-* **README.md**: This document which describes the study and the summary choices.
+* [**tidyDataSet.txt**:] (https://github.com/jeremyshantz/Tidy-Data-Analysis-Human-Activity-Recognition-Using-Smartphones-/blob/master/tidyDataSet.txt) 
+    * The tidy subset of the UCI HAR data set. Provided for convenience. It can by reproduced exactly by running the run_analysis.R script.
+* [**CodeBook.md**:] (https://github.com/jeremyshantz/Tidy-Data-Analysis-Human-Activity-Recognition-Using-Smartphones-/blob/master/CodeBook.md)
+    * Information about all columns in the data set including portions of the original code book and a full description of our transformation and summarizing of the original data set to produce our tidy data set.
+* **README.md**: This document which explains what the analysis file does. 
 * [**run_analysis.R**:] (https://github.com/jeremyshantz/Tidy-Data-Analysis-Human-Activity-Recognition-Using-Smartphones-/blob/master/run_analysis.R) Source code in R for our transformation of the UCI HAR data set into our tidy data set.
 
 ### The instruction list - how the script works
