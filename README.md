@@ -53,7 +53,7 @@ We acknowledged our use of the UCI HAR dataset:
 * Output
 	* Output the data.frame to disk.	
 
-* Notes
+* Note
     * The script also sets the working directory and downloads the original data set if it is not already present.
 
 ### Reading the data
