@@ -28,17 +28,18 @@ We acknowledged our use of the UCI HAR dataset:
     * Recombine the UCI data set in memory
         * Load the subject_\*.txt, y_\*.txt, X_\*.txt files.
     	* Column bind these three sets together.
-    	* Name the columes using the values loaded from from features.txt.
+    	* Name the columns using the values loaded from features.txt.
     	* Factor the activities column and name the factors using values loaded from activity_labels.txt
     	* Repeat these steps for both the train and test data sets.
     	* Row bind the two data sets.
     	* We now have the original data set loaded.
     * Tidy up the column names
-    	* Replace prefixes 't' and 'f' with 'time' and 'frequency' respectively.
-    	* Remove illegal characters and hyphens.
-        * Remove duplicate phrases in variable names. eg. 'BodyBody' becomes 'Body'
-        * Converted names to lower case
-    	* Prefix the column name with 'mean' (See the codebook's 'Summarizing the data' section for justification)
+        * Rename all column names using these rules
+        	* Replace prefixes 't' and 'f' with 'time' and 'frequency' respectively.
+        	* Remove illegal characters and hyphens.
+            * Remove duplicate phrases in variable names. eg. 'BodyBody' becomes 'Body'
+            * Converted names to lower case
+        	* Prefix the column name with 'mean' (See the codebook's 'Summarizing the data' section for justification)
     * Remove some columns
     	* Remove all columns where the original name did not contain -std or -mean including those containing "meanFreq" and those beginning with "angle." 
     	* Except we also retained the subject and activity columns.
