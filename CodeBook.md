@@ -32,8 +32,9 @@ We have renamed the metrics column names to make them more descriptive and human
 * Since the columns in the tidy data set represent the mean of each variable (See the 'Summarizing the data' section below), we have also prefixed the column names with "mean."
 
 #### Summarizing the data
-We grouped the data by subject, activity and calculated the mean of each metric in order to create "a second, independent tidy data set with the average of each variable for each activity and each subject.""
+We grouped the data by subject and activity, then calculated the mean of each metric in order to create "a second, independent tidy data set with the average of each variable for each activity and each subject."
 
+### 
 The UCI HAR data set's codebook (features_info.txt) describes the original variables this way:
 
 > The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
