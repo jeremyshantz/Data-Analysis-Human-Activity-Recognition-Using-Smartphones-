@@ -34,11 +34,6 @@ We have renamed the metrics column names to make them more descriptive and human
 #### Summarizing the data
 We grouped the data by subject, activity and calculated the mean of each metric in order to create "a second, independent tidy data set with the average of each variable for each activity and each subject.""
 
-
-All of the measurements below are of the mean for each combination of subject and activity.
-
-Our variable names are free from duplicates, provide meaningful and expanded prefixes, and contain no illegal characters. Our variables names are lowercase, but we chose to use periods in variable names to separate the components since the combination of lowercase and no periods produces hard-to-read variable names which we do not consider "tidy." eg. meanfrequencybodygyromeany vs mean.frequency.bodygyro.mean.y
-
 The UCI HAR data set's codebook (features_info.txt) describes the original variables this way:
 
 > The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
@@ -50,7 +45,7 @@ The UCI HAR data set's codebook (features_info.txt) describes the original varia
 > These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-### The variables
+### Codebook
 
 * **subject**
   * integer. 1 to 30. The identifier of the study subject.
