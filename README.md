@@ -17,21 +17,15 @@ We acknowledged our use of the UCI HAR dataset:
 * **README.md**: This document which describes the study and the summary choices.
 * [**run_analysis.R**:] (https://github.com/jeremyshantz/Tidy-Data-Analysis-Human-Activity-Recognition-Using-Smartphones-/blob/master/run_analysis.R) Source code in R for our transformation of the UCI HAR data set into our tidy data set.
 
-describing how the script works
+### The instruction list - how the script works
+* The only input to the **run_analysis.R** script is the UCI HAR data set which must be in the working directory. The script requires no parameters.
+* The output from the script is the tidy data set.
+* Although all of tasks required for this analyst are fully scriped in R and no manual steps are required (and thus the script itself *is* the instruction list), here is .....
 
-### The instruction list 
-Read the metrics labels and actvity labels.
-
-
-R script ..
 set the wd
 including downloading in the script
-input is raw data
-output is tidy data
-no parameters to the script
-if you can't script some steps, document them
-    Step 1: take the raw file and run software version x on it with paramters a =1
-	etc
+Read the metrics labels and actvity labels.
+
 
 ### Reading the data
 Read the tidy data set in R with the following command. First ensure the working directory contains the tidyDataSet.txt file. (On Windows, you may need to adjust the path slightly.)
