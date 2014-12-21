@@ -53,6 +53,9 @@ We acknowledged our use of the UCI HAR dataset:
 * Output
 	* Output the data.frame to disk.	
 
+* Notes
+    * The script also sets the working directory and downloads the original data set if it is not already present.
+
 ### Reading the data
 Read the tidy data set in R with the following command. First ensure the working directory contains the tidyDataSet.txt file. (On Windows, you may need to adjust the path slightly.)
 
